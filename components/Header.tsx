@@ -1,14 +1,15 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Header.module.css";
 import Link from "next/link";
 
 const Header: React.FC = () => {
     return (
-        <header className={styles.header}>
+        <div className={styles.header}>
             <div className={styles.container}>
                 <div className={styles.leftSection}>
                     <div className={styles.logoContainer}>
-                        <img src="/logo.png" alt="Logo" className={styles.logo} />
+                        <Image src="/logo.png" alt="Logo" width={50} height={50} />
                         <span className={styles.logoText}>New English</span>
                     </div>
 
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
                 </div>
                 <button className={styles.premiumButton}>Starter Kit</button>
             </div>
-        </header>
+        </div>
     );
 };
 

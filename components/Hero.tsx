@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <header className={styles.hero}>
       <h1 className={styles.title}>Speak English with confidence</h1>
-      <p className={styles.description}>The world's biggest platform for improving your spoken English.</p>
+      <p className={styles.description}>The world&apos;s biggest platform for improving your spoken English.</p>
     </header>
   );
 };
